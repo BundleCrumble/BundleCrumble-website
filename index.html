@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>BundleCrumble;s webpage</title>
+      <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/p5NHrL80/bundle.png">
+      <style>
+        @import url('https://googleapis.com');
+
+body {
+    font-family: 'Comic Relief', cursive;
+}
+
+        .home_button {
+          width: 100px;
+          image-rendering: pixelated;
+          image-rendering: crisp-edges;
+          transition: 0.2s;
+          display: block;
+        }
+        .home_button:hover {
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+        body {
+          background-color: black;
+        }
+        
+        .header_seperator {
+          border: 1px;
+          border: #393838;
+          height: 4px;
+          background-color: #4a4a4a;
+        }
+
+        .title {
+          display: inline-block;
+          color: white;
+          font-weight: bold;
+        }
+
+        .title-image {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+        }
+
+        .youtube_btn {
+          background-color: red;
+          color: white;
+          font-weight: 600;
+          border: none;
+          border-radius: 40px;
+          width: 150px;
+          height: 50px;
+          font-size: 20px;
+          transition: 0.2s;
+        }
+
+        .youtube_btn:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+        }
+
+        .youtube_btn:active {
+          cursor: progress;
+          transform: scale(0.9);
+        }
+
+        .video-title {
+          color: white;
+          text-decoration: none;
+          display: inline-block;
+          font-weight: bold;
+        }
+
+        .video-preview {
+          display: inline-block;
+          width: 336px;
+          text-decoration: none;
+          transition: 0.5s;
+          margin-right: 10px;
+          margin-bottom: 10px;
+        }
+
+        .thumbnail {
+          width: 336px;
+        }
+
+        .video-preview:hover {
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+
+        .video-preview:active {
+          transform: scale(0.9);
+          cursor: wait;
+        }
+
+        .Audio-title {
+          font-size: 30px;
+          color: white;
+          display: inline-block
+        }
+
+        .Audio-preview {
+          display: block;
+        }
+
+        
+      </style>
+
+      <script>
+          function playClickSound() {
+          const sound = document.getElementById("clickSound");
+          sound.currentTime = 0; // Instantly rewinds to start for fast, crisp clicks
+          sound.play().catch((error) => {
+          console.log("Audio playback error:", error);
+        });
+      }
+      //button sound
+      </script>
+
+      <!-- javascript-->
+    </head>
+
+
+
+
+
+
+
+    <body>
+      
+      <div class="title-image">
+      
+        <a href="index.html">
+          <!--https://sites.google.com/students.lovelandschools.org/bundlecrumble/bundlecrumbles-webpage this is link for website home page on school network-->
+          <img src="https://i.postimg.cc/p5NHrL80/bundle.png" class="home_button">
+      
+        </a>
+        <!--home page button-->
+
+        <h1 class="title">
+      
+          Hello and welcome to @BundleCrumble's page!
+     
+        </h1>
+        <!--main page title-->
+
+      </div>
+
+      <a href="https://www.youtube.com/@BundleCrumble?sub_confirmation=1" target="_blank">
+          
+        <button class="youtube_btn" onclick="playClickSound()">Subscribe</button>
+        
+      </a>
+      <!--subscribe button-->
+      <hr class="header_seperator">
+
+      
+      <div class="video-preview">
+        <a href="https://youtu.be/T5oJrtV6CGs" target="_blank"  onclick="playClickSound()">
+        <img src="https://i.postimg.cc/wRKpMjJf/thumbnail-1.avif" class="thumbnail">
+        <p class="video-title">
+          Bundle gets kicked out of his house because he forgot rent!
+        </p>
+        </a>
+      </div>
+      <!--video layout-hardcoded into website-->
+
+
+            <div class="video-preview">
+        <a href="https://scratch.mit.edu/projects/1332887653/fullscreen/" target="_blank" onclick="playClickSound()" >
+        <img src="https://i.postimg.cc/bYxVbJPH/IMG-3299-(2).jpg" class="thumbnail">
+        <p class="video-title">
+          Shadowstar v0.03 alpha - made in scratch
+        </p>
+        </a>
+      </div>
+
+      <div class="video-preview">
+        <a href="https://scratch.mit.edu/projects/1274353828/fullscreen/" target="_blank" onclick="playClickSound()">
+        <img src="https://i.postimg.cc/KRzY09cB/Discord_on_scratch.svg.jpg" alt="Discord_on_scratch.svg" class="thumbnail">
+        <p class="video-title">
+          Discord-made in scratch
+        </p>
+        </a>
+      </div>
+<div class="Audio-preview">
+  <audio controls controlslist="nodownload noremoteplayback" src="https://file.garden/asuSXZnSicjaJNUS/prettyjohn1-chill-chill-music-505125.mp3" loop autoplay>Background music</audio>
+  <p class="Audio-title">&lt;-- background music</p>
+  <audio id="clickSound" preload="auto">
+  <source src="https://file.garden/asuSXZnSicjaJNUS/creatorshome-keyboard-click-327728.mp3" type="audio/mpeg">
+</audio>
+</div>
+
+    </body>
+  </html>
