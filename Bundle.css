@@ -1,0 +1,72 @@
+@import url('https://googleapis.com');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+        .home_button {
+          width: 100px;
+          image-rendering: pixelated;
+          image-rendering: crisp-edges;
+          transition: 0.2s;
+          display: block;
+        }
+        .home_button:hover {
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+        body {
+          background-color: black;
+        }
+        
+        .header_seperator {
+          border: 1px;
+          border: #393838;
+          height: 4px;
+          background-color: #4a4a4a;
+        }
+
+        .title {
+          display: inline-block;
+          color: white;
+          font-family: Roboto;
+        }
+
+        .title-image {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+        }
+
+        .youtube_btn {
+          background-color: red;
+          color: white;
+          font-weight: bold;
+          border: none;
+          font-family: Roboto;
+          border-radius: 40px;
+          width: 150px;
+          height: 50px;
+          font-size: 20px;
+          transition: 0.2s;
+        }
+
+        .youtube_btn:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+        }
+
+        .youtube_btn:active {
+          cursor: progress;
+          transform: scale(0.9);
+        }
+
+        .video-title {
+          color: white;
+        }
+
+        .video-preview {
+          display: block;
+          width: 336px;
+          text-decoration: underline;
+        }
